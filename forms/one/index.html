@@ -1,0 +1,53 @@
+<html>
+<!-- Mixins-->
+<!-- Pen Title-->
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900">
+  <link rel="stylesheet prefetch" href="//codepen.io/assets/reset/reset.css">
+  <link rel="canonical" href="http://codepen.io/anon/pen/zKKGNN?editors=0110">
+  <meta name="robots" content="noindex">
+  <script src="//assets.codepen.io/assets/editor/live/console_runner-d0a557e5cb67f9cd9bbb9673355c7e8e.js"></script>
+  <meta charset="UTF-8">
+  <script src="//assets.codepen.io/assets/editor/live/css_live_reload_init-7618a0de08795409d8f6c9ef6805f7b2.js"></script>
+  <script src="//assets.codepen.io/assets/editor/live/events_runner-21174b4c7273cfddc124acb0876792e0.js"></script>
+</head>
+<div class="pen-title">
+  <h1>Upload your Excel please</h1>
+</div>
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Login</h1>
+    <form>
+      <div class="input-container">
+        <input type="file" id="Username" required="required"/>
+        <label for="Username">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="Password" required="required"/>
+        <label for="Password">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button type="file"><span>Upload</span></button>
+      </div>
+      <div class="footer"><a href="#">Forgot your password?</a></div>
+    </form>
+  </div>
+  
+</div>
+<!-- Portfolio--><a id="portfolio" href="http://andytran.me/" title="View my portfolio!"><i class="fa fa-link"></i></a>
+<!-- CodePen--><a id="codepen" href="http://codepen.io/andytran/" title="Follow me!"><i class="fa fa-codepen"></i></a>
+<script>
+  $('.toggle').on('click', function() {
+  $('.container').stop().addClass('active');
+});
+
+$('.close').on('click', function() {
+  $('.container').stop().removeClass('active');
+});
+</script>
+</html>
